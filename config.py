@@ -30,12 +30,12 @@ SUDO_USERS.append(5655112788)
 SUDO_USERS.append(5655112788)
 SUDO_USERS.append(5288547197)
 
-OWNER_ID = int(os.environ.get("OWNER_ID", None))
+OWNER_ID = int(os.environ.get("5696003353", None))
 
 
 # Don't Mess with Codes !! 
-DB_URI = config("DATABASE_URL", None)
-SUDO_USERS.append(OWNER_ID)
+DB_URI = config("mongodb://rawanxd:factshubham@ac-e5grai4-shard-00-00.7da3xcz.mongodb.net:27017,ac-e5grai4-shard-00-01.7da3xcz.mongodb.net:27017,ac-e5grai4-shard-00-02.7da3xcz.mongodb.net:27017/?ssl=true&replicaSet=atlas-bywhec-shard-0&authSource=admin&retryWrites=true&w=majority", None)
+SUDO_USERS.append(5696003353)
 
 # Tokens
 MK1 = TelegramClient('MK', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
